@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Ильченко](https://up.htmlacademy.ru/adaptive/12/user/42732).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id311377).
 
 ---
 
