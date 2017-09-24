@@ -22,23 +22,25 @@
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list search-list">
-            <li class="search-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list cart-list">
-            <li class="cart-list__item">
-              <a href="#">Корзина:
-                <span>пока пуста</span>
+          <div class="main-nav__inner-wrapper">
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input class="search__field" type="search" name="search" id="search" required="">
+              <button class="search__button" type="submit">
+                <span class="visually-hidden">Найти</span>
+              </button>
+            </form>
+            <div class="cart">
+              <a class="cart__link" href="#">Корзина:
+                <span class="cart__value">пока пуста</span>
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <section class="page-main__intro intro">
+      <section class="page-main__section intro">
         <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
         <ul class="intro__list">
           <li class="intro__item">
@@ -49,7 +51,7 @@
           </li>
         </ul>
       </section>
-      <article class="page-main__popular-product popular-product">
+      <article class="page-main__section popular-product">
         <div class="popular-product__title">
           <h2>
             <a href="#">Вязаные корзинки</a>
@@ -81,7 +83,7 @@
         </a>
         <a class="button" href="#">Заказать</a>
       </article>
-      <section class="page-main__advantages advantages">
+      <section class="page-main__section advantages">
         <h2>Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ecology">Экологически чистые материалы</li>
@@ -92,9 +94,23 @@
           <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="page-main__reviews reviews">
+      <section class="page-main__section reviews">
         <h2>Отзывы</h2>
         <div class="reviews__list slider">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__quote">
+              <span class="reviews__author-name">Анастасия Красильникова</span>
+              <a class="reviews__author-link" href="#">@misssssiskras</a>
+            </cite>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__quote">
+              <span class="reviews__author-name">Анастасия Красильникова</span>
+              <a class="reviews__author-link" href="#">@misssssiskras</a>
+            </cite>
+          </blockquote>
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__quote">
@@ -113,7 +129,7 @@
         </div>
         <a class="button" href="#">Написать</a>
       </section>
-      <section class="page-main__contacts contacts">
+      <section class="page-main__section contacts">
         <h2>Контакты</h2>
         <div class="contacts__table">
           <div class="contacts__row">
@@ -158,24 +174,27 @@
         </p>
       </div>
     </footer>
-    <section class="modal modal-cart">
-      <h2 class="modal-cart__title">Добавить в корзину</h2>
-      <span>Выберите размер:</span>
-      <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="size-s">
-          <input class="visually-hidden modal-cart__input" id="size-s" type="radio" name="size" value="s" checked>
-          <span class="modal-cart__indicator">S</span>
-        </label>
-        <label for="size-m">
-          <input class="visually-hidden modal-cart__input" id="size-m" type="radio" name="size" value="m">
-          <span class="modal-cart__indicator">M</span>
-        </label>
-        <label for="size-l">
-          <input class="visually-hidden modal-cart__input" id="size-l" type="radio" name="size" value="l">
-          <span class="modal-cart__indicator">L</span>
-        </label>
-        <button class="button modal-cart__button" type="submit">Добавить</button>
-      </form>
-    </section>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <section class="modal-cart">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <span>Выберите размер:</span>
+        <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="size-s">
+            <input class="visually-hidden modal-cart__input" id="size-s" type="radio" name="size" value="s" checked>
+            <span class="modal-cart__indicator">S</span>
+          </label>
+          <label for="size-m">
+            <input class="visually-hidden modal-cart__input" id="size-m" type="radio" name="size" value="m">
+            <span class="modal-cart__indicator">M</span>
+          </label>
+          <label for="size-l">
+            <input class="visually-hidden modal-cart__input" id="size-l" type="radio" name="size" value="l">
+            <span class="modal-cart__indicator">L</span>
+          </label>
+          <button class="button modal-cart__button" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
