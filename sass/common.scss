@@ -1,0 +1,54 @@
+@import "variables.scss";
+
+body {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+  color: $dark-color;
+  background-color: $white-color;
+}
+
+a {
+  color: $dark-color;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.button {
+  padding: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+  color: $dark-color;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid $dark-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $dark-color;
+  }
+
+  &:active {
+    color: $down-white-link;
+    background-color: $dark-color;
+  }
+}
