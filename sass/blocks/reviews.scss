@@ -1,0 +1,52 @@
+@import "../variables";
+
+.reviews {
+  //
+
+  &__item {
+    margin: 0 0 30px 0;
+  }
+
+  &__author-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
+  }
+
+  &__author-link {
+    font-style: italic;
+  }
+
+  &__indicators {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__indicator {
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $border-color;
+    cursor: pointer;
+
+    &--previous {
+      background: url("../../img/icon-left-arrow.svg") center center no-repeat;
+    }
+
+    &--next {
+      background: url("../../img/icon-right-arrow.svg") center center no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

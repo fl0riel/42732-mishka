@@ -1,0 +1,59 @@
+@import "../variables";
+
+.popular-product {
+  //
+
+  &__marker {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $light-green-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 24px;
+  }
+
+  &__group {
+    margin-bottom: 30px;
+    line-height: 20px;
+  }
+
+  &__group-fields {
+    margin-bottom: 30px;
+    line-height: 20px;
+    box-shadow: inset 0 -1px 1px -1px $border-color;
+  }
+
+  &__field {
+    padding: 10px 0;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  &__value {
+    padding: 10px 0 10px 30px;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 30px;
+  }
+
+  &__link-photo {
+    margin: 0;
+    line-height: 0;
+  }
+
+  &__price {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    text-align: center;
+  }
+}

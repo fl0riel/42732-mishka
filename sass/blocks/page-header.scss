@@ -5,23 +5,25 @@
   justify-content: flex-end;
   padding-top: 20px;
   padding-bottom: 20px;
+  outline: solid;
 
   &__logo {
     height: 100%;
     margin: 0 auto;
     line-height: 0;
+    outline: 2px solid blue;
   }
 
   &__logo-image {
     width: 86px;
     height: 35px;
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       opacity: $hover-link-opacity;
     }
 
-    &:active {
+    &[href]:active {
       opacity: $down-link-opacity;
     }
   }

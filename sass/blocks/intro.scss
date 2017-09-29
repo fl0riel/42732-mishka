@@ -1,0 +1,53 @@
+@import "../variables";
+
+.intro {
+  text-align: center;
+  background-color: rgba(241, 241, 241, 1);
+  border-top: 1px solid rgba(236, 236, 236, 1);
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+  &--main {
+    background: url("../../img/hero-mobile@1x.jpg") no-repeat -135px 0 $bg-intro;
+  }
+
+  &__title {
+    margin: 70px 0;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    color: $white-color;
+    text-align: left;
+    background-color: $dark-green-color;
+    list-style: none;
+  }
+
+  &__item {
+    //
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $white-color;
+
+    &--left {
+      background-color: $light-green-color;
+    }
+
+    &--right {
+      background-color: $dark-green-color;
+    }
+  }
+}

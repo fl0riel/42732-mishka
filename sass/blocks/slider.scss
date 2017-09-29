@@ -1,0 +1,11 @@
+.slider {
+  //
+
+  &__item {
+    display: none;
+
+    &--choose {
+      display: block;
+    }
+  }
+}

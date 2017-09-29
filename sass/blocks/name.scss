@@ -1,0 +1,13 @@
+@import "../variables";
+
+.name {
+  //
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    display: block;
+  }
+}

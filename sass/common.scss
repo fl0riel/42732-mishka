@@ -1,6 +1,9 @@
 @import "variables.scss";
 
 body {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -14,14 +17,18 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -30,12 +37,16 @@ a {
 }
 
 .button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 260px;
   padding: 14px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
   color: $dark-color;
+  text-align: center;
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $dark-color;

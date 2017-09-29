@@ -1,0 +1,50 @@
+@import "../variables";
+
+.modal {
+  //
+
+  &__overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__cart {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    //
+  }
+
+
+  &__form-wrapper {
+    margin: 30px 0;
+  }
+
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
+    text-transform: uppercase;
+    border: 2px solid rgba(68, 68, 68, 0.1);
+    cursor: pointer;
+
+    &--active {
+      border-color: $light-green-color;
+    }
+  }
+}

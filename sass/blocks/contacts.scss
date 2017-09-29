@@ -1,0 +1,50 @@
+@import "../variables";
+
+.contacts {
+  //
+
+  &__title {
+    margin: 45px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__item-title {
+    //
+  }
+
+  &__item-text {
+    max-width: 145px;
+    margin: 0 0 0 30px;
+
+    &--link {
+      max-width: 100%;
+      border-bottom: 1px solid $light-green-color;
+    }
+  }
+
+  &__map {
+    width: 320px;
+    height: 457px;
+    margin-bottom: 40px;
+    background: url("../../img/map-mobile@1x.jpg") 0 0 no-repeat;
+  }
+
+  &__button {
+    margin-bottom: 40px;
+  }
+}

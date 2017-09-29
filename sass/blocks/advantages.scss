@@ -1,0 +1,45 @@
+@import "../variables";
+
+.advantages {
+  //
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding-top: 60px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
+
+    &--ecology {
+      background: url("../../img/icon-feature-flower.svg") 0 0 no-repeat;
+    }
+
+    &--price {
+      background: url("../../img/icon-feature-money.svg") 0 0 no-repeat;
+    }
+
+    &--likes {
+      background: url("../../img/icon-feature-heart.svg") 0 0 no-repeat;
+    }
+
+    &--handmade {
+      background: url("../../img/icon-feature-ball.svg") 0 0 no-repeat;
+    }
+
+    &--domestic {
+      background: url("../../img/icon-feature-rocket.svg") 0 0 no-repeat;
+    }
+
+    &--gift {
+      background: url("../../img/icon-feature-gift.svg") 0 0 no-repeat;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-intro;
+  outline: solid;
+
+  &__block {
+    outline: 2px solid blue;
+  }
+}

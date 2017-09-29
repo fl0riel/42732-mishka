@@ -1,0 +1,21 @@
+@import "../variables";
+
+.page-main {
+  border-top: 1px solid transparent;
+  outline: solid;
+
+  &__section {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    outline: 2px solid blue;
+
+    &__title {
+      margin: 30px 0;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+      font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+      color: $black-color;
+    }
+  }
+}
