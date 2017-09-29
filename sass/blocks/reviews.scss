@@ -33,11 +33,11 @@
     cursor: pointer;
 
     &--previous {
-      background: url("../../img/icon-left-arrow.svg") center center no-repeat;
+      background: url("../img/icon-left-arrow.svg") center center no-repeat;
     }
 
     &--next {
-      background: url("../../img/icon-right-arrow.svg") center center no-repeat;
+      background: url("../img/icon-right-arrow.svg") center center no-repeat;
     }
 
     &:hover,
