@@ -10,7 +10,7 @@
     background: url("../img/hero-mobile@1x.jpg") no-repeat -135px 0 $bg-intro;
   }
 
-  &__title {
+  .intro__title {
     margin: 70px 0;
     font-weight: 700;
     font-size: 27px;
@@ -19,7 +19,7 @@
     color: $black-color;
   }
 
-  &__list {
+  .intro__list {
     margin: 0;
     padding: 0;
     color: $white-color;
@@ -28,11 +28,11 @@
     list-style: none;
   }
 
-  &__item {
+  .intro__item {
     //
   }
 
-  &__link {
+  .intro__link {
     display: block;
     width: 100%;
     padding: 30px;

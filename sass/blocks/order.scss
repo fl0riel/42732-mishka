@@ -3,19 +3,19 @@
 .order {
   margin-bottom: 30px;
 
-  &__text {
+  .order__text {
     font-size: 13px;
     line-height: 24px;
   }
 
-  &__fieldset {
+  .order__fieldset {
     margin: 0;
     padding: 30px 0;
     border: none;
     border-top: 1px solid $light-green-color;
   }
 
-  &__title {
+  .order__title {
     padding-right: 25px;
     font-weight: 700;
     font-size: 17px;
@@ -25,13 +25,13 @@
     text-transform: uppercase;
   }
 
-  &__list {
+  .order__list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  &__label {
+  .order__label {
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
@@ -39,7 +39,7 @@
     color: $black-color;
   }
 
-  &__input {
+  .order__input {
     display: block;
     width: 100%;
     padding: 15px 0;
@@ -48,12 +48,12 @@
     cursor: pointer;
   }
 
-  &__input:hover,
-  &__input:active {
+  .order__input:hover,
+  .order__input:active {
     border-color: $light-green-color;
   }
 
-  &__textarea-input {
+  .order__textarea-input {
     display: block;
     width: 100%;
     min-height: 140px;

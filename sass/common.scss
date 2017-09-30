@@ -3,8 +3,6 @@
 body {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
-  margin: 0 auto;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -31,6 +29,11 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container {

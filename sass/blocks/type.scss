@@ -3,11 +3,11 @@
 .type {
   //
 
-  &__item {
+  .type__item {
     margin-bottom: 30px;
   }
 
-  &__label {
+  .type__label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -15,7 +15,7 @@
     cursor: pointer;
   }
 
-  &__input-radio + .checkbox-indicator {
+  .type__input-radio + .checkbox-indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,21 +26,21 @@
     border-radius: 50%;
   }
 
-  &__input-radio:checked + .checkbox-indicator {
+  .type__input-radio:checked + .checkbox-indicator {
     box-shadow: inset 0 0 0 10px $white-color,
       inset 40px 40px 0 0 $light-green-color;
   }
 
-  &__input-radio:hover + .checkbox-indicator,
-  &__input-radio:focus + .checkbox-indicator {
+  .type__input-radio:hover + .checkbox-indicator,
+  .type__input-radio:focus + .checkbox-indicator {
     border-color: $light-green-color;
   }
 
-  &__input-radio:active + .checkbox-indicator {
+  .type__input-radio:active + .checkbox-indicator {
     border-color: $down-black-link;
   }
 
-  &__input-radio:checked:active + .checkbox-indicator {
+  .type__input-radio:checked:active + .checkbox-indicator {
     border-color: $down-black-link;
   }
 }

@@ -3,7 +3,7 @@
 .contacts {
   //
 
-  &__title {
+  .contacts__title {
     margin: 45px 0;
     font-weight: 700;
     font-size: 18px;
@@ -12,22 +12,21 @@
     color: $black-color;
   }
 
-  &__list {
+  .contacts__list {
     margin: 0;
-    padding: 0;
     list-style: none;
   }
 
-  &__item {
+  .contacts__item {
     display: flex;
     margin-bottom: 40px;
   }
 
-  &__item-title {
+  .contacts__item-title {
     //
   }
 
-  &__item-text {
+  .contacts__item-text {
     max-width: 145px;
     margin: 0 0 0 30px;
 
@@ -37,14 +36,14 @@
     }
   }
 
-  &__map {
+  .contacts__map {
     width: 320px;
     height: 457px;
     margin-bottom: 40px;
     background: url("../img/map-mobile@1x.jpg") 0 0 no-repeat;
   }
 
-  &__button {
+  .contacts__button {
     margin-bottom: 40px;
   }
 }

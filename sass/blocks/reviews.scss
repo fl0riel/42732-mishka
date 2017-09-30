@@ -3,11 +3,11 @@
 .reviews {
   //
 
-  &__item {
+  .reviews__item {
     margin: 0 0 30px 0;
   }
 
-  &__author-name {
+  .reviews__author-name {
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -16,16 +16,16 @@
     color: $black-color;
   }
 
-  &__author-link {
+  .reviews__author-link {
     font-style: italic;
   }
 
-  &__indicators {
+  .reviews__indicators {
     display: flex;
     margin-bottom: 30px;
   }
 
-  &__indicator {
+  .reviews_indicator {
     width: 130px;
     height: 50px;
     background-color: transparent;

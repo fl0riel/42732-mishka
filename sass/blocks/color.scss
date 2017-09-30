@@ -3,11 +3,11 @@
 .color {
   //
 
-  &__item {
+  .color__item {
     margin-bottom: 22px;
   }
 
-  &__label {
+  .color__label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -15,7 +15,7 @@
     cursor: pointer;
   }
 
-  &__input-checkbox + .checkbox-indicator {
+  .color__input-checkbox + .checkbox-indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@
     border: 2px solid $dark-color;
   }
 
-  &__input-checkbox:checked + .checkbox-indicator::before {
+  .color__input-checkbox:checked + .checkbox-indicator::before {
     content: "";
     position: absolute;
     top: 0;
@@ -38,12 +38,12 @@
     background-size: cover;
   }
 
-  &__input-checkbox:hover + .checkbox-indicator,
-  &__input-checkbox:focus + .checkbox-indicator {
+  .color__input-checkbox:hover + .checkbox-indicator,
+  .color__input-checkbox:focus + .checkbox-indicator {
     border-color: $light-green-color;
   }
 
-  &__input-checkbox:active + .checkbox-indicator {
+  .color__input-checkbox:active + .checkbox-indicator {
     border-color: $down-black-link;
   }
 }
