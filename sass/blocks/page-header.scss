@@ -2,16 +2,13 @@
 
 .page-header {
   display: flex;
-  justify-content: flex-end;
   padding-top: 20px;
   padding-bottom: 20px;
-  outline: solid;
 
   .page-header__logo {
     height: 100%;
     margin: 0 auto;
     line-height: 0;
-    outline: 2px solid blue;
   }
 
   .page-header__logo-image {
@@ -25,6 +22,42 @@
 
     &[href]:active {
       opacity: $down-link-opacity;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .page-header__logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 113px;
+      height: 46px;
+      margin: 10px 0 0 50px;
+      z-index: 2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    justify-content: flex-start;
+
+    .page-header__logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 149px;
+      height: 72px;
+      margin: 0 50%;
     }
   }
 }

@@ -26,15 +26,14 @@
 
   .production__playpause {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     display: block;
     width: 102px;
     height: 78px;
-    margin: 50% 0 0 50%;
+    margin: -38px 0 0 -51px;
     background: url("../img/icon-play.svg") 0 0 no-repeat;
     border: none;
-    transform: translate(-51px, -94px);
     cursor: pointer;
   }
 
@@ -49,5 +48,62 @@
 
   .production__button {
     width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+
+    .production__title-wrapper {
+      order: 2;
+    }
+
+    .production__title {
+      font-size: 20px;
+    }
+
+    .production__video-wrapper {
+      order: 1;
+    }
+
+    .production__video {
+      width: 100%;
+      height: auto;
+    }
+
+    .production__text-wrapper {
+      order: 3;
+    }
+
+    .production__text {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    align-items: flex-end;
+    position: relative;
+
+    .production__title-wrapper {
+      order: 1;
+      width: 30%;
+    }
+
+    .production__video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 682px;
+    }
+
+    .production__text-wrapper {
+      order: 2;
+      width: 30%;
+    }
   }
 }

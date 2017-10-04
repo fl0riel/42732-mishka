@@ -41,3 +41,24 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+    border-bottom: none;
+
+    .social__list {
+      //
+    }
+
+    .social__item {
+      //
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    //
+  }
+}

@@ -1,8 +1,7 @@
 @import "variables.scss";
 
 body {
-  display: flex;
-  flex-direction: column;
+  min-width: 320px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -46,7 +45,7 @@ input[type="radio"].visually-hidden {
   width: 260px;
   padding: 14px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 20px;
   font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
   color: $dark-color;
@@ -65,5 +64,17 @@ input[type="radio"].visually-hidden {
   &:active {
     color: $down-white-link;
     background-color: $dark-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 100px;
   }
 }

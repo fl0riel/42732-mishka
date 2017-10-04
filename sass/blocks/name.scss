@@ -11,3 +11,24 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .name {
+    //
+
+    .name__item {
+      display: flex;
+      align-items: center;
+    }
+
+    .name__label {
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name {
+    //
+  }
+}
