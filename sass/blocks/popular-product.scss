@@ -17,6 +17,7 @@
   }
 
   .popular-product__group {
+    width: 100%;
     margin-bottom: 30px;
     line-height: 20px;
   }
@@ -37,15 +38,22 @@
     padding: 10px 0 10px 30px;
   }
 
-  .popular-product__link {
-    display: inline-block;
-    vertical-align: middle;
+  .popular-product__photo-wrapper {
     margin-bottom: 30px;
+    text-align: center;
   }
 
-  .popular-product__link-photo {
+  .popular-product__photo {
     margin: 0;
-    line-height: 0;
+  }
+
+  .popular-product__photo-image {
+    max-width: 260px;
+    max-height: 315px;
+  }
+
+  .popular-product__price-info {
+    //
   }
 
   .popular-product__price {
@@ -55,5 +63,105 @@
     line-height: 24px;
     font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .popular-product {
+    //
+
+    .popular-product__wrapper {
+      display: flex;
+    }
+
+    .popular-product__title {
+      justify-content: space-between;
+    }
+
+    .popular-product__marker {
+      align-self: center;
+      max-width: 80px;
+      margin-right: 25px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    .popular-product__info-wrapper {
+      //flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .popular-product__info,
+    .popular-product__price-info {
+      flex-basis: 50%;
+      padding-right: 43px;
+    }
+
+    .popular-product__text {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .popular-product__photo-wrapper {
+      flex-basis: 50%;
+    }
+
+    .popular-product__price-info {
+      margin-top: -70px;
+    }
+
+    .popular-product__price {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-product {
+    //
+
+    //.popular-product__wrapper {
+    //  display: flex;
+    //}
+
+    .popular-product__title {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-top: 100px;
+    }
+
+    .popular-product__marker {
+      margin: 0 45px;
+    }
+
+    .popular-product__info-wrapper {
+      margin-top: -150px;
+    }
+
+    .popular-product__info {
+      margin-top: 150px;
+    }
+
+    .popular-product__photo-link {
+      width: 525px;
+      height: 636px;
+      margin-bottom: 0;
+    }
+
+    .popular-product__info,
+    .popular-product__price-info {
+      max-width: 525px;
+      padding-left: 175px;
+      padding-right: 60px;
+    }
+
+    .popular-product__price-info {
+      margin-top: -20px;
+    }
+
+    .popular-product__button {
+      width: 240px;
+    }
   }
 }

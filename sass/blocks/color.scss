@@ -47,3 +47,28 @@
     border-color: $down-black-link;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .color {
+    background-color: $bg-intro;
+
+    .color__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .color__item {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color {
+    //
+
+    .color__item {
+      flex-basis: 33%;
+    }
+  }
+}

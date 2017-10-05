@@ -9,20 +9,29 @@
   }
 
   .order__fieldset {
-    margin: 0;
-    padding: 30px 0;
     border: none;
-    border-top: 1px solid $light-green-color;
   }
 
   .order__title {
-    padding-right: 25px;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 17px;
     line-height: 1;
     font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
     color: $light-green-color;
     text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 50px;
+      height: 1px;
+      margin-left: 25px;
+      background-color: $light-green-color;
+    }
   }
 
   .order__list {
@@ -43,9 +52,19 @@
     display: block;
     width: 100%;
     padding: 15px 0;
+    background-color: transparent;
     border: none;
     border-bottom: 2px solid $black-color;
     cursor: pointer;
+
+    &--textarea {
+      display: block;
+      width: 100%;
+      min-height: 140px;
+      padding: 17px;
+      border: 2px solid $black-color;
+      cursor: pointer;
+    }
   }
 
   .order__input:hover,
@@ -53,12 +72,84 @@
     border-color: $light-green-color;
   }
 
-  .order__textarea-input {
-    display: block;
-    width: 100%;
-    min-height: 140px;
-    padding: 17px;
-    border: 2px solid $black-color;
-    cursor: pointer;
+  .order__form-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    //
+
+    .order__text {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .order__fieldset {
+      display: flex;
+      border-top: none;
+    }
+
+    .order__fieldset-phone,
+    .order__fieldset-email {
+      background-color: $bg-intro;
+    }
+
+    .order__title {
+      flex-grow: 1;
+      align-items: flex-start;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .order__list {
+      flex-basis: 75%;
+    }
+
+    .order__label {
+      font-size: 19px;
+      line-height: 1;
+    }
+
+    .order__input {
+      //
+
+      &--phone,
+      &--email,
+      &--textarea {
+        flex-basis: 75%;
+      }
+    }
+
+    .order__form-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .order__form-text {
+      order: 2;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .order__button {
+      order: 1;
+      max-width: 230px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    //
+
+    .order__form-info {
+      padding-left: 25%;
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 .intro {
   text-align: center;
-  background-color: rgba(241, 241, 241, 1);
+  background-color: $bg-intro;
   border-top: 1px solid rgba(236, 236, 236, 1);
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 
@@ -12,11 +12,6 @@
 
   .intro__title {
     margin: 70px 0;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 30px;
-    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
-    color: $black-color;
   }
 
   .intro__list {
@@ -24,7 +19,7 @@
     padding: 0;
     color: $white-color;
     text-align: left;
-    background-color: $dark-green-color;
+    background-color: $bg-intro;
     list-style: none;
   }
 
@@ -35,7 +30,7 @@
   .intro__link {
     display: block;
     width: 100%;
-    padding: 30px;
+    padding: 30px 120px 30px 30px;
     font-weight: 700;
     font-size: 19px;
     line-height: 24px;
@@ -48,6 +43,67 @@
 
     &--right {
       background-color: $dark-green-color;
+    }
+  }
+
+  .intro__link-text {
+    display: block;
+    max-width: 140px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-size: cover;
+    margin-top: -45px;
+
+    .intro__wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .intro__title {
+      margin: 165px 0;
+    }
+
+    .intro__list {
+      display: flex;
+      flex-basis: 668px;
+    }
+
+    .intro__item {
+      flex-basis: 50%;
+    }
+
+    .intro__link {
+      min-height: 108px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-size: cover;
+
+    .intro__wrapper {
+      max-width: 900px;
+    }
+
+    .intro__title {
+      margin: 165px 0;
+    }
+
+    .intro__list {
+      display: flex;
+      flex-basis: 668px;
+    }
+
+    .intro__item {
+      flex-basis: 50%;
+    }
+
+    .intro__link {
+      min-height: 108px;
     }
   }
 }

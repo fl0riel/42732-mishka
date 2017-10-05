@@ -1,13 +1,10 @@
 @import "../variables";
 
 .page-main {
-  border-top: 1px solid transparent;
-  outline: solid;
+  //
 
   .page-main__section {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    outline: 2px solid blue;
+    //
   }
 
   .page-main__title {
@@ -17,5 +14,41 @@
     line-height: 30px;
     font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
     color: $black-color;
+  }
+
+
+  .page-main__title-link {
+    color: $black-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    //
+
+    .page-main__section {
+      //
+    }
+
+    .page-main__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    //
+
+    .page-main__section {
+      //
+    }
+
+    .page-main__title {
+      font-size: 53px;
+      line-height: 57px;
+      z-index: 2;
+    }
   }
 }

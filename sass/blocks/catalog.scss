@@ -7,3 +7,25 @@
     //
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    //
+
+    .catalog__item {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+
+    .catalog__item {
+      flex-direction: column;
+      flex-basis: 30%;
+    }
+  }
+}
