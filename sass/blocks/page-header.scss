@@ -1,9 +1,9 @@
 @import "../variables";
 
 .page-header {
+  position: relative;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 
   .page-header__logo {
     height: 100%;
@@ -28,10 +28,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    position: relative;
     justify-content: flex-end;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 50px;
 
     .page-header__logo {
       position: absolute;
@@ -49,6 +47,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     justify-content: flex-start;
+    padding: 0;
 
     .page-header__logo {
       position: absolute;

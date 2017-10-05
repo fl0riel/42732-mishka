@@ -42,7 +42,7 @@ input[type="radio"].visually-hidden {
 .button {
   display: inline-block;
   vertical-align: middle;
-  width: 260px;
+  width: 100%;
   padding: 14px;
   font-weight: 700;
   font-size: 17px;
@@ -75,6 +75,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .container {
-    padding: 0 100px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    //
   }
 }

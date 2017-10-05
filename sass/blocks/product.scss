@@ -6,6 +6,7 @@
   .product__photo-link {
     display: inline-block;
     vertical-align: middle;
+    width: 100%;
   }
 
   .product__photo {
@@ -71,7 +72,6 @@
 
     .product__photo-link {
       flex-basis: 50%;
-      height: 334px; //временно
     }
 
     .product__info {

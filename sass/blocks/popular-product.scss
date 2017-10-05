@@ -17,6 +17,7 @@
   }
 
   .popular-product__group {
+    width: 100%;
     margin-bottom: 30px;
     line-height: 20px;
   }
@@ -37,15 +38,13 @@
     padding: 10px 0 10px 30px;
   }
 
-  .popular-product__photo-link {
-    display: inline-block;
-    vertical-align: middle;
+  .popular-product__photo-wrapper {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .popular-product__photo {
     margin: 0;
-    line-height: 0;
   }
 
   .popular-product__photo-image {
@@ -54,7 +53,7 @@
   }
 
   .popular-product__price-info {
-    max-width: 260px;
+    //
   }
 
   .popular-product__price {
@@ -92,8 +91,10 @@
       flex-wrap: wrap;
     }
 
-    .popular-product__info {
+    .popular-product__info,
+    .popular-product__price-info {
       flex-basis: 50%;
+      padding-right: 43px;
     }
 
     .popular-product__text {
@@ -101,12 +102,11 @@
       line-height: 30px;
     }
 
-    .popular-product__photo-link {
+    .popular-product__photo-wrapper {
       flex-basis: 50%;
     }
 
     .popular-product__price-info {
-      max-width: 315px;
       margin-top: -70px;
     }
 
@@ -157,7 +157,7 @@
     }
 
     .popular-product__price-info {
-      margin-top: -110px;
+      margin-top: -20px;
     }
 
     .popular-product__button {

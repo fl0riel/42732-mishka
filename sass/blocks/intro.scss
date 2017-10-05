@@ -54,6 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
+    background-size: cover;
     margin-top: -45px;
 
     .intro__wrapper {
@@ -68,7 +69,6 @@
     .intro__list {
       display: flex;
       flex-basis: 668px;
-      padding: 0 50px;
     }
 
     .intro__item {
@@ -83,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    //
+    background-size: cover;
 
     .intro__wrapper {
       max-width: 900px;
@@ -96,7 +96,6 @@
     .intro__list {
       display: flex;
       flex-basis: 668px;
-      padding: 0 100px;
     }
 
     .intro__item {

@@ -59,21 +59,23 @@
       </header>
       <main class="page-main">
         <section class="page-main__section intro intro--main">
-          <div class="intro__wrapper container">
-            <h1 class="page-main__title intro__title">Милые штуки ручной работы для дома</h1>
+          <div class="container">
+            <div class="intro__wrapper ">
+              <h1 class="page-main__title intro__title">Милые штуки ручной работы для дома</h1>
+            </div>
+            <ul class="intro__list container">
+              <li class="intro__item">
+                <a class="intro__link intro__link--left" href="#">
+                  <span class="intro__link-text">Предметы интерьера</span>
+                </a>
+              </li>
+              <li class="intro__item">
+                <a class="intro__link intro__link--right" href="#">
+                  <span class="intro__link-text">Детские игрушки</span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="intro__list container">
-            <li class="intro__item">
-              <a class="intro__link intro__link--left" href="#">
-                <span class="intro__link-text">Предметы интерьера</span>
-              </a>
-            </li>
-            <li class="intro__item">
-              <a class="intro__link intro__link--right" href="#">
-                <span class="intro__link-text">Детские игрушки</span>
-              </a>
-            </li>
-          </ul>
         </section>
         <article class="page-main__section popular-product container">
           <div class="popular-product__wrapper popular-product__title">
@@ -100,11 +102,11 @@
                 </tr>
               </table>
             </div>
-            <a class="popular-product__photo-link" href="#">
+            <div class="popular-product__photo-wrapper">
               <figure class="popular-product__photo">
                 <img class="popular-product__photo-image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
               </figure>
-            </a>
+            </div>
             <div class="popular-product__price-info">
               <div class="popular-product__price" href="#">Цена:
                 <span>990 руб.</span>
@@ -124,91 +126,95 @@
             <li class="advantages__item advantages__item--gift">Поставляется в<br> подарочной упаковке</li>
           </ul>
         </section>
-        <section class="page-main__section reviews">
-          <h2 class="page-main__title">Отзывы</h2>
-          <div class="reviews__group slider">
-            <blockquote class="reviews__item slider__item slider__item--choose">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author">
-                <span class="reviews__author-name">Анастасия Красильникова</span>
-                <a class="reviews__author-link" href="#">@misssssiskras</a>
-              </cite>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author">
-                <span class="reviews__author-name">Анастасия Красильникова</span>
-                <a class="reviews__author-link" href="#">@misssssiskras</a>
-              </cite>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author">
-                <span class="reviews__author-name">Анастасия Красильникова</span>
-                <a class="reviews__author-link" href="#">@misssssiskras</a>
-              </cite>
-            </blockquote>
-            <div class="reviews__indicators slider__indicators">
-              <button class="reviews__indicator reviews__indicator--previous" type="button">
-                <span class="visually-hidden">Предыдущий отзыв</span>
-              </button>
-              <button class="reviews__indicator reviews__indicator--next" type="button">
-                <span class="visually-hidden">Следующий отзыв</span>
-              </button>
+        <section class="page-main__section ">
+          <div class="reviews container">
+            <h2 class="page-main__title">Отзывы</h2>
+            <div class="reviews__group slider">
+              <blockquote class="reviews__item slider__item slider__item--choose">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author">
+                  <span class="reviews__author-name">Анастасия Красильникова</span>
+                  <a class="reviews__author-link" href="#">@misssssiskras</a>
+                </cite>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author">
+                  <span class="reviews__author-name">Анастасия Красильникова</span>
+                  <a class="reviews__author-link" href="#">@misssssiskras</a>
+                </cite>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author">
+                  <span class="reviews__author-name">Анастасия Красильникова</span>
+                  <a class="reviews__author-link" href="#">@misssssiskras</a>
+                </cite>
+              </blockquote>
+              <div class="reviews__indicators slider__indicators">
+                <button class="reviews__indicator reviews__indicator--previous" type="button">
+                  <span class="visually-hidden">Предыдущий отзыв</span>
+                </button>
+                <button class="reviews__indicator reviews__indicator--next" type="button">
+                  <span class="visually-hidden">Следующий отзыв</span>
+                </button>
+              </div>
             </div>
+            <a class="button reviews__button" href="#">Написать</a>
           </div>
-          <a class="button reviews__button" href="#">Написать</a>
         </section>
-        <section class="page-main__section contacts">
-          <div class="contacts__info-wrapper container">
-            <h2 class="contacts__title">Контакты</h2>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <span class="contacts__item-title">e-mail:</span>
-                <a class="contacts__item-text contacts__item-text--link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </li>
-              <li class="contacts__item contacts__item--address">
-                <span class="contacts__item-title">адрес:</span>
-                <p class="contacts__item-text">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
-              </li>
-            </ul>
-          </div>
-          <div class="contacts__map"></div>
-          <div class="contacts__button container">
-            <a class="button" href="#">Напишите нам</a>
+        <section class="page-main__section container">
+          <div class="contacts">
+            <div class="contacts__info-wrapper ">
+              <h2 class="contacts__title">Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <span class="contacts__item-title">e-mail:</span>
+                  <a class="contacts__item-text contacts__item-text--link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                </li>
+                <li class="contacts__item contacts__item--address">
+                  <span class="contacts__item-title">адрес:</span>
+                  <p class="contacts__item-text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map"></div>
+            <a class="button contacts__button" href="#">Напишите нам</a>
           </div>
         </section>
       </main>
-      <footer class="page-footer container">
-        <a class="page-footer__block page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logo Mishka">
-        </a>
-        <div class="page-footer__block social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Instagram</span>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper container">
+          <a class="page-footer__block page-footer__logo">
+            <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logo Mishka">
+          </a>
+          <div class="page-footer__block social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__block copyright">
+            <p class="copyright__text">Разработано
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="visually-hidden">HTML academy</span>
+                <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Logo html academy">
               </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__block copyright">
-          <p class="copyright__text">Разработано
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">HTML academy</span>
-              <img class="copyright__link-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Logo html academy">
-            </a>
-          </p>
+            </p>
+          </div>
         </div>
       </footer>
       <div class="modal">

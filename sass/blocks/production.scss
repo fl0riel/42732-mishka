@@ -24,6 +24,10 @@
     line-height: 0;
   }
 
+  .production__video {
+    width: 100%;
+  }
+
   .production__playpause {
     position: absolute;
     top: 50%;
@@ -92,6 +96,9 @@
     .production__title-wrapper {
       order: 1;
       width: 30%;
+      margin-top: 40px;
+      padding: 30px 45px 0 33px;
+      background-position: 33px 0;
     }
 
     .production__video-wrapper {

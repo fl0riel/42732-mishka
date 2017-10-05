@@ -9,8 +9,6 @@
   }
 
   .order__fieldset {
-    margin: 0;
-    padding: 30px 30px;
     border: none;
   }
 
@@ -91,13 +89,12 @@
 
     .order__fieldset {
       display: flex;
-      padding: 30px 50px;
       border-top: none;
+    }
 
-      &--phone,
-      &--email {
-        background-color: $bg-intro;
-      }
+    .order__fieldset-phone,
+    .order__fieldset-email {
+      background-color: $bg-intro;
     }
 
     .order__title {
@@ -142,6 +139,7 @@
 
     .order__button {
       order: 1;
+      max-width: 230px;
     }
   }
 }
@@ -149,5 +147,9 @@
 @media (min-width: $desktop-width) {
   .order {
     //
+
+    .order__form-info {
+      padding-left: 25%;
+    }
   }
 }

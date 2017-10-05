@@ -1,9 +1,12 @@
 @import "../variables";
 
 .page-footer {
-  display: flex;
-  flex-direction: column;
   background-color: $bg-intro;
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
   .page-footer__logo {
     display: none;
@@ -12,11 +15,14 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    .page-footer__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     .page-footer__block {
       //
