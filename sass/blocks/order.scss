@@ -1,9 +1,11 @@
 @import "../variables";
 
 .order {
-  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 54px;
 
   .order__text {
+    margin-bottom: 23px;
     font-size: 13px;
     line-height: 24px;
   }
@@ -12,9 +14,19 @@
     border: none;
   }
 
+  .order__fieldset-phone {
+    margin-bottom: 31px;
+  }
+
+  .order__fieldset-email {
+    margin-bottom: 31px;
+  }
+
   .order__title {
     display: flex;
     align-items: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 17px;
     line-height: 1;
@@ -51,7 +63,11 @@
   .order__input {
     display: block;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 0;
+    font-size: 19px;
+    line-height: 1;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $black-color;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black-color;
@@ -61,9 +77,29 @@
       display: block;
       width: 100%;
       min-height: 140px;
-      padding: 17px;
+      margin-top: 25px;
+      padding: 15px;
+      font-size: 19px;
+      line-height: 1;
+      font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+      color: $black-color;
       border: 2px solid $black-color;
       cursor: pointer;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $dark-color;
+      opacity: 0.3;
+    }
+
+    &::-moz-placeholder {
+      color: $dark-color;
+      opacity: 0.3;
+    }
+
+    &:-ms-input-placeholder {
+      color: $dark-color;
+      opacity: 0.3;
     }
   }
 
@@ -73,6 +109,7 @@
   }
 
   .order__form-text {
+    margin: 17px 0 31px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -80,7 +117,8 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    //
+    padding-top: 55px;
+    padding-bottom: 50px;
 
     .order__text {
       font-size: 17px;
@@ -94,16 +132,34 @@
 
     .order__fieldset-phone,
     .order__fieldset-email {
+      margin: 0;
       background-color: $bg-intro;
+    }
+
+    .order__fieldset-phone {
+      padding: 50px 0 5px;
+    }
+
+    .order__fieldset-email {
+      padding: 20px 0 50px;
+    }
+
+    .order__fieldset-textarea {
+      padding: 25px 0 55px;
     }
 
     .order__title {
       flex-grow: 1;
       align-items: flex-start;
+      margin-top: 15px;
 
       &::after {
         display: none;
       }
+    }
+
+    .order__title-textarea {
+      margin-top: 40px;
     }
 
     .order__list {
@@ -116,7 +172,7 @@
     }
 
     .order__input {
-      //
+      padding: 11px 17px 12px;
 
       &--phone,
       &--email,
@@ -133,6 +189,7 @@
 
     .order__form-text {
       order: 2;
+      margin: 10px 0 0 0;
       font-size: 17px;
       line-height: 30px;
     }
@@ -146,10 +203,28 @@
 
 @media (min-width: $desktop-width) {
   .order {
-    //
+    padding-top: 105px;
+
+    .order__text {
+      padding-left: 175px;
+      padding-right: 175px;
+    }
+
+    .order__fieldset {
+      padding-right: 115px;
+    }
+
+    .order__fieldset-textarea {
+      padding-bottom: 50px;
+    }
+
+    .order__title {
+      max-width: 175px;
+      padding-left: 60px;
+    }
 
     .order__form-info {
-      padding-left: 25%;
+      padding: 0 175px;
     }
   }
 }

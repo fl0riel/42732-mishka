@@ -36,7 +36,8 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  padding: 0 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .button {
@@ -69,7 +70,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 0 50px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 

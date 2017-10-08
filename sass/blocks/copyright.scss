@@ -14,5 +14,16 @@
   .copyright__link {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    //
+
+    .copyright__text {
+      margin: 5px 0 0 0;
+    }
   }
 }

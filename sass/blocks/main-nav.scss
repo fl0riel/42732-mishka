@@ -1,14 +1,14 @@
 @import "../variables";
 
 .main-nav {
-  position: absolute;
+  position: relative;
   display: block;
   width: 100%;
 
   .main-nav__toggle {
     position: absolute;
-    top: 0;
-    right: 30px;
+    top: 1px;
+    right: 24px;
     display: block;
     width: 35px;
     height: 35px;
@@ -16,13 +16,13 @@
     border: none;
     cursor: pointer;
 
-    &--close {
-      //background: url("../img/icon-menu-close.svg") center center no-repeat;
+    &--open {
+      background: url("../img/icon-menu-close.svg") center center no-repeat;
     }
   }
 
   .main-nav__wrapper {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     display: block;
@@ -37,7 +37,7 @@
     background-color: $white-color;
 
     &--close {
-      //display: none;
+      display: none;
     }
   }
 
@@ -132,8 +132,8 @@
 
     .main-nav__list {
       order: 1;
-      flex-basis: 45%;
-      margin-right: 5%;
+      flex-basis: 40%;
+      margin-right: 10%;
     }
 
     .main-nav__inner-wrapper {
@@ -142,7 +142,7 @@
       order: 2;
       flex-basis: 40%;
       margin-left: 10%;
-      margin-bottom: 0;
+      margin-bottom: 18px;
     }
   }
 }

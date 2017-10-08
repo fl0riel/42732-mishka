@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    //
+    padding-top: 80px;
 
     .catalog__item {
       display: flex;
@@ -22,6 +22,7 @@
   .catalog {
     display: flex;
     justify-content: space-between;
+    padding-top: 130px;
 
     .catalog__item {
       flex-direction: column;

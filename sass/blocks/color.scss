@@ -3,15 +3,23 @@
 .color {
   //
 
+  .color__title {
+    margin-bottom: 25px;
+  }
+
+  .color__list {
+    padding: 0 0 1px 0;
+  }
+
   .color__item {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 
   .color__label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    padding: 10px 0 10px 65px;
+    padding: 10px 0 10px 63px;
     cursor: pointer;
   }
 
@@ -50,7 +58,13 @@
 
 @media (min-width: $tablet-width) {
   .color {
+    padding-top: 50px;
+    padding-bottom: 25px;
     background-color: $bg-intro;
+
+    .color__title {
+      margin-top: 15px;
+    }
 
     .color__list {
       display: flex;
@@ -59,6 +73,25 @@
 
     .color__item {
       flex-basis: 50%;
+
+      &:nth-of-type(even) {
+        padding-left: 12px;
+      }
+    }
+
+    .color__label {
+      padding: 16px 0 18px 80px;
+    }
+
+    .color__input-checkbox + .checkbox-indicator {
+      width: 52px;
+      height: 52px;
+    }
+
+    .color__input-checkbox:checked + .checkbox-indicator::before {
+      width: 33px;
+      height: 22px;
+      margin: 13px 0 0 9px;
     }
   }
 }
@@ -67,8 +100,16 @@
   .color {
     //
 
+    .color__fieldset {
+      padding-right: 0;
+    }
+
     .color__item {
-      flex-basis: 33%;
+      flex-basis: 33.33%;
+
+      &:nth-of-type(even) {
+        padding-left: 0;
+      }
     }
   }
 }

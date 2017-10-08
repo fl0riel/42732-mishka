@@ -3,15 +3,25 @@
 .type {
   //
 
+  .type__title {
+    margin-bottom: 25px;
+  }
+
+  .type__list {
+    margin-bottom: 33px;
+    padding: 0 0 1px 0;
+  }
+
   .type__item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .type__label {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    padding-left: 65px;
+    padding-top: 9px;
+    padding-left: 63px;
     cursor: pointer;
   }
 
@@ -42,5 +52,43 @@
 
   .type__input-radio:checked:active + .checkbox-indicator {
     border-color: $down-black-link;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .type {
+    margin-top: 58px;
+
+    .type__title {
+      margin-top: 15px;
+    }
+
+    .type__list {
+      margin-bottom: 25px;
+    }
+
+    .type__item {
+      margin-bottom: 27px;
+    }
+
+    .type__label {
+      padding: 15px 0 15px 80px;
+    }
+
+    .type__input-radio + .checkbox-indicator {
+      width: 52px;
+      height: 52px;
+    }
+
+    .type__input-radio:checked + .checkbox-indicator {
+      box-shadow: inset 0 0 0 13px $white-color,
+        inset 52px 52px 0 0 $light-green-color;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    //
   }
 }
