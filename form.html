@@ -9,14 +9,14 @@
   <body class="page">
     <div class="wrapper">
       <header class="page-header container">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logo Mishka">
-        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logo Mishka">
+          </a>
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/Скрыть меню</span>
           </button>
-          <div class="main-nav__wrapper main-nav__wrapper--close">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="main-nav__item site-list__item">
                 <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a>
@@ -71,7 +71,7 @@
           <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="type">
               <div class="order__fieldset container">
-                <h3 class="order__title">Тип</h3>
+                <h3 class="order__title type__title">Тип</h3>
                 <ul class="order__list type__list">
                   <li class="type__item">
                     <label class="order__label type__label" for="accessory">
@@ -91,8 +91,8 @@
               </div>
             </div>
             <div class="color">
-              <div class="order__fieldset container">
-                <h3 class="order__title">Цвет</h3>
+              <div class="order__fieldset color__fieldset container">
+                <h3 class="order__title color__title">Цвет</h3>
                 <ul class="order__list color__list">
                   <li class="color__item">
                     <label class="order__label color__label" for="color-white">
@@ -141,7 +141,7 @@
             </div>
             <div class="name">
               <div class="order__fieldset container">
-                <h3 class="order__title">ФИО</h3>
+                <h3 class="order__title name__title">ФИО</h3>
                 <ul class="order__list name__list">
                   <li class="name__item">
                     <label class="order__label name__label" for="first-name">Имя:</label>
@@ -172,10 +172,12 @@
                 <input class="order__input order__input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
               </div>
             </div>
-            <div class="order__fieldset container">
-              <h3 class="order__title">Доп</h3>
-              <label class="visually-hidden" for="additionally">Дополнительные пожелания к заказу</label>
-              <textarea class="order__input--textarea" name="additionally" id="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="order__fieldset-textarea">
+              <div class="order__fieldset container">
+                <h3 class="order__title order__title-textarea">Доп</h3>
+                <label class="visually-hidden" for="additionally">Дополнительные пожелания к заказу</label>
+                <textarea class="order__input order__input--textarea" name="additionally" id="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </div>
             <div class="container">
               <div class="order__form-info">
@@ -188,7 +190,7 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper container">
-          <a class="page-footer__block page-footer__logo">
+          <a class="page-footer__block page-footer__logo" href="#">
             <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Logo Mishka">
           </a>
           <div class="page-footer__block social">
@@ -221,5 +223,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -24,10 +24,11 @@
 
     .site-list__item {
       margin-right: 0;
-      padding: 38px 0;
+      padding: 32px 0 30px;
 
       &:first-child {
-        padding-right: 38px;
+        padding-right: 32px;
+        border-left: none;
       }
 
       &:nth-of-type(2) {

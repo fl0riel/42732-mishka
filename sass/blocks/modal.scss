@@ -4,14 +4,29 @@
   display: none;
 
   .modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
   }
 
   .modal__cart {
+    position: absolute;
+    top: 170%;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 46px;
     text-align: center;
+    background-color: $white-color;
+    box-shadow: 0 4px 10px 1px $border-color;
+    z-index: 2;
   }
 
   .modal__title {
+    padding: 0 50px;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
@@ -25,6 +40,8 @@
   }
 
   .modal__form-wrapper {
+    display: flex;
+    justify-content: space-between;
     margin: 30px 0;
   }
 
@@ -45,5 +62,42 @@
 
   .modal__input:checked + .modal__label {
     border-color: $light-green-color;
+  }
+
+  .modal__button {
+    color: $white-color;
+    background-color: $light-green-color;
+    border-color: $light-green-color;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .modal {
+    //
+
+    .modal__cart {
+      left: 50%;
+      max-width: 568px;
+      padding-right: 107px;
+      padding-left: 107px;
+      transform: translateX(-50%);
+    }
+
+    .modal__title {
+      padding: 0;
+      font-size: 30px;
+      line-height: 57px;
+    }
+
+    .modal__label {
+      width: 110px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    //
   }
 }

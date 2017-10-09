@@ -3,8 +3,17 @@
 .name {
   //
 
+  .name__title {
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+
+  .name__list {
+    padding: 0 0 1px 0;
+  }
+
   .name__item {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   .name__label {
@@ -14,11 +23,16 @@
 
 @media (min-width: $tablet-width) {
   .name {
-    //
+    padding: 51px 0 25px;
+
+    .name__title {
+      margin-top: 15px;
+    }
 
     .name__item {
       display: flex;
       align-items: center;
+      margin-bottom: 24px;
     }
 
     .name__label {

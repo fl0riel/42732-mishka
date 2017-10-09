@@ -4,14 +4,22 @@
   text-align: center;
   background-color: $bg-intro;
   border-top: 1px solid rgba(236, 236, 236, 1);
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
 
-  &--main {
-    background: url("../img/hero-mobile@1x.jpg") no-repeat -135px 0 $bg-intro;
+  &--index {
+    background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px $bg-intro;
   }
 
   .intro__title {
-    margin: 70px 0;
+    margin: 69px 0 75px 0;
+    letter-spacing: normal;
+
+    &--index {
+      margin: 69px 0 123px 0;
+    }
+  }
+
+  .intro__title-wordspacing {
+    word-spacing: inherit;
   }
 
   .intro__list {
@@ -30,7 +38,7 @@
   .intro__link {
     display: block;
     width: 100%;
-    padding: 30px 120px 30px 30px;
+    padding: 25px 120px 30px 30px;
     font-weight: 700;
     font-size: 19px;
     line-height: 24px;
@@ -52,6 +60,24 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .intro {
+    //
+
+    .intro__title {
+      letter-spacing: 1.5px;
+    }
+
+    .intro__title-wordspacing {
+      word-spacing: 105px;
+    }
+
+    .container {
+      padding: 0;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     background-size: cover;
@@ -63,12 +89,15 @@
     }
 
     .intro__title {
-      margin: 165px 0;
+      margin: 95px 0 77px 0;
+
+      &--index {
+        margin: 152px 0 374px;
+      }
     }
 
     .intro__list {
       display: flex;
-      flex-basis: 668px;
     }
 
     .intro__item {
@@ -76,6 +105,7 @@
     }
 
     .intro__link {
+      padding: 33px 120px 37px 35px;
       min-height: 108px;
     }
   }
@@ -83,19 +113,23 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    background-size: cover;
+    //margin-top: -45px;
+    //background-size: cover;
 
     .intro__wrapper {
-      max-width: 900px;
+      max-width: 700px;
     }
 
     .intro__title {
-      margin: 165px 0;
+      margin: 96px 0 100px;
+
+      &--index {
+        margin: 155px 0 360px;
+      }
     }
 
     .intro__list {
       display: flex;
-      flex-basis: 668px;
     }
 
     .intro__item {
