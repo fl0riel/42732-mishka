@@ -104,6 +104,7 @@
     .popular-product__info,
     .popular-product__price-info {
       flex-basis: 50%;
+      max-width: 50%;
       padding-right: 43px;
     }
 
@@ -119,6 +120,7 @@
 
     .popular-product__photo-wrapper {
       flex-basis: 50%;
+      max-width: 50%;
       margin-top: 26px;
       margin-bottom: 0;
     }

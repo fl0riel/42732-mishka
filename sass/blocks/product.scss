@@ -78,7 +78,11 @@
 
     .product__photo-link {
       flex-basis: 50%;
-      height: 335px;
+      min-height: 335px;
+    }
+
+    .product__photo {
+      height: 334px;
     }
 
     .product__info {
