@@ -56,10 +56,6 @@
     max-width: 100%;
   }
 
-  .popular-product__price-info {
-    //
-  }
-
   .popular-product__price {
     margin-bottom: 26px;
     font-weight: 700;
@@ -96,7 +92,6 @@
     }
 
     .popular-product__info-wrapper {
-      //flex-direction: column;
       flex-wrap: wrap;
     }
 
@@ -145,10 +140,6 @@
   .popular-product {
     padding-top: 80px;
     padding-bottom: 95px;
-
-    //.popular-product__wrapper {
-    //  display: flex;
-    //}
 
     .popular-product__title-wrapper {
       flex-direction: row-reverse;

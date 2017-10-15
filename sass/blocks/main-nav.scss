@@ -30,28 +30,7 @@
       background: url("../img/icon-menu-open.svg") center center no-repeat;
     }
   }
-  //
-  //.main-nav__wrapper {
-  //  position: absolute; //relative для без js
-  //  top: 0;
-  //  right: 0;
-  //  display: block;
-  //  width: 100%;
-  //  margin-top: 38px;
-  //  padding-top: 20px;
-  //
-  //
-  //  &--close {
-  //    display: none;
-  //  }
-  //}
 
-  //.main-nav__list {
-  //  margin: 0;
-  //  padding: 0;
-  //  line-height: 0;
-  //  list-style: none;
-  //}
   .main-nav__block {
     //
 
@@ -72,7 +51,6 @@
   }
 
   .main-nav__link {
-    //position: relative;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -103,23 +81,6 @@
     .main-nav__toggle {
       display: none;
     }
-    //
-    //.main-nav__wrapper {
-    //  position: static;
-    //  display: flex;
-    //  flex-wrap: wrap;
-    //  justify-content: space-between;
-    //  width: auto;
-    //  margin: 0;
-    //  padding: 0;
-    //  background-color: transparent;
-    //}
-
-    //.main-nav__list {
-    //  display: flex;
-    //  flex-wrap: wrap;
-    //  order: 2;
-    //}
 
     .main-nav__item {
       padding: 0;
@@ -148,12 +109,6 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     //
-
-    //.main-nav__list {
-    //  order: 1;
-    //  flex-basis: 40%;
-    //  margin-right: 10%;
-    //}
 
     .main-nav__inner-wrapper {
       display: flex;
