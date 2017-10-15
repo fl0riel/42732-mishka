@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.goods {
+  display: none;
+
+  .goods__link {
+    //
+
+    &:hover,
+    &:focus {
+      color: $hover-black-link;
+    }
+
+    &:active {
+      color: $down-black-link;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  //
+}
+
+@media (min-width: $desktop-width) {
+  .goods {
+    display: flex;
+    order: 4;
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    .goods__item {
+      font-size: 15px;
+      line-height: 24px;
+      margin-right: 60px;
+    }
+
+    .goods__link {
+      color: $black-color;
+    }
+  }
+}

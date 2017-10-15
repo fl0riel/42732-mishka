@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .delivery {
+    display: flex;
+    order: 3;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+    color: $dark-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .delivery {
+    order: 5;
+    margin-top: 20px;
+  }
+}

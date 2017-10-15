@@ -1,0 +1,67 @@
+@import "../variables";
+
+.social {
+  padding: 25px 0;
+  border-bottom: 1px solid $border-color;
+
+  .social__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .social__item {
+    margin-right: 30px;
+    line-height: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: $dark-green-color;
+    }
+
+    &:active .social__icon {
+      fill-opacity: $down-link-opacity;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+    border-bottom: none;
+    margin-left: 80px;
+
+    .social__list {
+      //
+    }
+
+    .social__item {
+      //
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    //
+
+    .social__list {
+      margin-top: 5px;
+    }
+  }
+}

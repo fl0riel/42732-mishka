@@ -1,0 +1,65 @@
+@import "../variables";
+
+.page-header {
+  position: relative;
+  display: flex;
+  padding: 39px 0 40px;
+
+  .page-header__logo {
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: $hover-link-opacity;
+    }
+
+    &[href]:active {
+      opacity: $down-link-opacity;
+    }
+  }
+
+  .page-header__logo-versions {
+    display: block;
+  }
+
+  .page-header__logo-image {
+    width: 86px;
+    height: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    justify-content: flex-end;
+    padding: 0 50px;
+
+    .page-header__logo {
+      order: 1;
+      margin: 0 0 14px 0;
+    }
+
+    .page-header__logo-image {
+      width: 113px;
+      height: 46px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    justify-content: flex-start;
+    padding: 0;
+
+    .page-header__logo {
+      order: 2;
+      margin: 5px 0 0 0;
+    }
+
+    .page-header__logo-image {
+      width: 149px;
+      height: 72px;
+    }
+  }
+}
