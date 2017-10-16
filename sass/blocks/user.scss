@@ -7,12 +7,18 @@
     position: relative;
 
     &:hover .user__icon,
-    &:focus .user__icon {
+    &:focus .user__icon,
+    &:hover .social__icons-use,
+    &:focus .social__icons-use,
+    &:hover .social__icons,
+    &:focus .social__icons {
       fill: $light-green-color;
       fill-opacity: 1;
     }
 
-    &:active .user__icon {
+    &:active .user__icon,
+    &:active .social__icons-use,
+    &:active .social__icons {
       fill: $light-green-color;
       fill-opacity: 0.3;
     }

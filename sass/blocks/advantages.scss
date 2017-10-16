@@ -30,39 +30,39 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
 
-    .advantages__icon {
-      margin-bottom: 15px;
-      fill: $light-green-color;
+  .advantages__icon {
+    margin-bottom: 15px;
+    fill: $light-green-color;
 
-      &--ecology {
-        margin-left: 8px;
-        margin-bottom: 17px;
-      }
+    &--ecology {
+      margin-left: 8px;
+      margin-bottom: 17px;
+    }
 
-      &--price {
-        margin-bottom: 26px;
-      }
+    &--price {
+      margin-bottom: 26px;
+    }
 
-      &--likes {
-        margin-left: 7px;
-        margin-bottom: 22px;
-      }
+    &--likes {
+      margin-left: 7px;
+      margin-bottom: 22px;
+    }
 
-      &--handmade {
-        margin-left: 3px;
-        margin-bottom: 17px;
-      }
+    &--handmade {
+      margin-left: 3px;
+      margin-bottom: 17px;
+    }
 
-      &--domestic {
-        margin-left: -6px;
-        margin-bottom: 28px;
-      }
+    &--domestic {
+      margin-left: -6px;
+      margin-bottom: 28px;
+    }
 
-      &--gift {
-        margin-left: 3px;
-        margin-bottom: 19px;
-      }
+    &--gift {
+      margin-left: 3px;
+      margin-bottom: 19px;
     }
   }
 }
