@@ -47,6 +47,10 @@
     font-size: 13px;
   }
 
+  .product__wrapper {
+    //
+  }
+
   .product__price-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +96,7 @@
     }
 
     .product__photo-link {
-      flex-basis: 50%;
+      width: 50%;
     }
 
     .product__info {
@@ -137,7 +141,16 @@
     }
 
     .product__photo-link {
-      flex-basis: 100%;
+      width: 100%;
+    }
+
+    .product__photo {
+      height: 460px;
+    }
+
+    .product__info {
+      flex-basis: auto;
+      min-height: 196px;
     }
 
     .product__title {

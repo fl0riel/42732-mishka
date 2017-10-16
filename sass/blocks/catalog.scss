@@ -27,7 +27,12 @@
 
     .catalog__item {
       flex-direction: column;
-      flex-basis: 30%;
+      width: 30%;
+      margin-right: 4.76%;
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
     }
   }
 }
