@@ -132,6 +132,7 @@
 @media (min-width: $desktop-width) {
   .production {
     align-items: flex-start;
+    width: 100%;
     margin-bottom: 105px;
 
     .production__title-wrapper {
