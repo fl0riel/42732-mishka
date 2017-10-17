@@ -1,7 +1,7 @@
 @import "../variables";
 
 .production {
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   border: 1px solid $border-color;
 
   .production__title-wrapper {
@@ -10,7 +10,7 @@
 
   .production__title {
     position: relative;
-    margin: 25px 0;
+    margin: 22px 0 25px;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -69,11 +69,11 @@
   }
 
   .production__text-wrapper {
-    padding: 0 34px 30px 34px;
+    padding: 0 34px 32px 34px;
   }
 
   .production__text {
-    margin: 25px 0;
+    margin: 27px 0 25px;
     font-size: 13px;
     line-height: 24px;
   }
@@ -118,11 +118,11 @@
 
     .production__text-wrapper {
       order: 3;
-      padding: 0 40px 47px 40px;
+      padding: 0 40px 45px 40px;
     }
 
     .production__text {
-      margin: 5px 0 35px;
+      margin: 5px 0 36px;
       font-size: 15px;
       line-height: 30px;
     }

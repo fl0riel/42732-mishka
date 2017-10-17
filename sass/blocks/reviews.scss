@@ -1,6 +1,7 @@
 @import "../variables";
 
 .reviews {
+  position: relative;
   padding: 1px 30px 50px;
 
   .reviews__title {
@@ -10,6 +11,10 @@
 
   .reviews__item {
     margin: 0 0 30px 0;
+  }
+
+  .reviews__text-break {
+    display: none;
   }
 
   .reviews__author {
@@ -66,7 +71,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 50px;
+    padding: 52px 50px 55px;
     background: url("../img/review@1x.jpg") 0 0 no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -97,6 +102,10 @@
       max-width: 50%;
       margin-top: 60px;
       margin-bottom: 0;
+    }
+
+    .reviews__author-name {
+      letter-spacing: 0.8px;
     }
 
     .reviews__indicators {
@@ -135,8 +144,16 @@
       padding-right: 80px;
     }
 
+    .reviews__text-break {
+      display: block;
+    }
+
     .reviews__author {
       margin-top: 38px;
+    }
+
+    .reviews__author-name {
+      letter-spacing: normal;
     }
   }
 }

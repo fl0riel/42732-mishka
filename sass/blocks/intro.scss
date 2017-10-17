@@ -1,12 +1,13 @@
 @import "../variables";
 
 .intro {
+  position: relative;
   text-align: center;
   background-color: $bg-intro;
   box-shadow: inset 0 2px 0 -1px $border-color;
 
   &--index {
-    background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px $bg-intro-index;
+    background: url("../img/hero-mobile@1x.jpg") center -20px no-repeat $bg-intro-index;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -95,6 +96,7 @@
 
     &--index {
       background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: center center;
       border-top: 1px solid $border-color;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -156,6 +158,18 @@
       fill-opacity: 0.5;
       transform: translateY(-50%);
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      margin-bottom: -15px;
+      background: url("../img/bg-zigzag-fill.svg") 0 0 repeat-x;
+      background-size: auto 24px;
+    }
   }
 }
 
@@ -194,6 +208,11 @@
 
     .intro__link {
       min-height: 108px;
+    }
+
+    &::after {
+      height: 34px;
+      background-size: auto 34px;
     }
   }
 }

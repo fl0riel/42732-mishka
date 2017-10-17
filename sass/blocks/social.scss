@@ -1,7 +1,7 @@
 @import "../variables";
 
 .social {
-  padding: 25px 0;
+  padding: 25px 5px 25px 0;
   border-bottom: 1px solid $border-color;
 
   .social__list {
@@ -45,6 +45,10 @@
     padding: 0;
     border-bottom: none;
     margin-left: 80px;
+
+    .social__list {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -53,7 +57,7 @@
     //
 
     .social__list {
-      margin-top: 5px;
+      margin-top: 0;
     }
   }
 }
