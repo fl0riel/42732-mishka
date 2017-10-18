@@ -1,51 +1,42 @@
 @import "../variables";
 
 .main-nav {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 100%;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
+  color: $black-color;
+  background-color: $white-color;
+  z-index: 1;
 
   .main-nav__toggle {
     position: absolute;
-    top: 1px;
+    top: 21px;
     right: 24px;
     display: block;
     width: 35px;
     height: 35px;
-    background: url("../img/icon-menu-open.svg") center center no-repeat;
+    background: url("../img/icon-menu-close.svg") center center no-repeat;
     border: none;
     cursor: pointer;
 
     &--open {
-      background: url("../img/icon-menu-close.svg") center center no-repeat;
+      background: url("../img/icon-menu-open.svg") center center no-repeat;
     }
   }
 
-  .main-nav__wrapper {
-    position: absolute; //relative для без js
-    top: 0;
-    right: 0;
-    display: block;
-    width: 100%;
-    margin-top: 38px;
-    padding-top: 20px;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
-    color: $black-color;
-    background-color: $white-color;
+  .main-nav__block {
+    //
 
     &--close {
       display: none;
     }
-  }
-
-  .main-nav__list {
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-    list-style: none;
   }
 
   .main-nav__item {
@@ -60,7 +51,6 @@
   }
 
   .main-nav__link {
-    position: relative;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -80,27 +70,16 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding-top: 0;
+    background-color: transparent;
 
     .main-nav__toggle {
       display: none;
-    }
-
-    .main-nav__wrapper {
-      position: static;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: auto;
-      margin: 0;
-      padding: 0;
-      background-color: transparent;
-    }
-
-    .main-nav__list {
-      display: flex;
-      flex-wrap: wrap;
-      order: 2;
     }
 
     .main-nav__item {
@@ -119,8 +98,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-      order: 1;
-      flex-basis: 80%;
+      order: 2;
+      flex-basis: 60%;
       margin-left: 20%;
       margin-bottom: 18px;
     }
@@ -131,18 +110,12 @@
   .main-nav {
     //
 
-    .main-nav__list {
-      order: 1;
-      flex-basis: 40%;
-      margin-right: 10%;
-    }
-
     .main-nav__inner-wrapper {
       display: flex;
       justify-content: flex-end;
-      order: 2;
+      order: 3;
       flex-basis: 40%;
-      margin-left: 10%;
+      margin-left: 0;
       margin-bottom: 0;
     }
   }

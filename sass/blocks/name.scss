@@ -13,11 +13,16 @@
   }
 
   .name__item {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
 
   .name__label {
     display: block;
+    margin-bottom: 5px;
+  }
+
+  .name__input {
+    padding: 11px 0 13px;
   }
 }
 
@@ -32,17 +37,27 @@
     .name__item {
       display: flex;
       align-items: center;
+      margin-top: 5px;
       margin-bottom: 24px;
     }
 
     .name__label {
       margin-right: 25px;
     }
+
+    .name__input {
+      padding: 11px 17px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .name {
-    //
+    padding-bottom: 24px;
+
+    .name__item {
+      margin-top: 0;
+      margin-bottom: 26px;
+    }
   }
 }

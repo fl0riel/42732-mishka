@@ -10,57 +10,66 @@
   }
 
   .advantages__item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
-    padding-top: 55px;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     font-family: "Open Sans", "Tahoma", "Geneva", sans-serif;
     color: $black-color;
 
-    &--ecology {
-      background: url("../img/icon-feature-flower.svg") 8px 0 no-repeat;
-      margin-bottom: 29px;
-    }
-
     &--price {
       margin-bottom: 35px;
-      padding-top: 53px;
-      background: url("../img/icon-feature-money.svg") 0 0 no-repeat;
-    }
-
-    &--likes {
-      margin-bottom: 32px;
-      padding-top: 48px;
-      background: url("../img/icon-feature-heart.svg") 7px 0 no-repeat;
     }
 
     &--handmade {
-      margin-bottom: 33px;
-      padding-top: 51px;
-      background: url("../img/icon-feature-ball.svg") 3px 0 no-repeat;
-    }
-
-    &--domestic {
-      margin-bottom: 31px;
-      padding-top: 50px;
-      background: url("../img/icon-feature-rocket.svg") 0 0 no-repeat;
-    }
-
-    &--gift {
-      padding-top: 52px;
-      background: url("../img/icon-feature-gift.svg") 3px 0 no-repeat;
+      margin-bottom: 34px;
     }
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+
+  .advantages__icon {
+    margin-bottom: 15px;
+    fill: $light-green-color;
+
+    &--ecology {
+      margin-left: 8px;
+      margin-bottom: 17px;
+    }
+
+    &--price {
+      margin-bottom: 26px;
+    }
+
+    &--likes {
+      margin-left: 7px;
+      margin-bottom: 22px;
+    }
+
+    &--handmade {
+      margin-left: 3px;
+      margin-bottom: 17px;
+    }
+
+    &--domestic {
+      margin-left: -6px;
+      margin-bottom: 28px;
+    }
+
+    &--gift {
+      margin-left: 3px;
+      margin-bottom: 19px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-bottom: 50px;
+    padding-bottom: 53px;
 
     .advantages__title {
       margin: 45px 0 50px;
@@ -100,6 +109,14 @@
 
       &--gift {
         order: 6;
+      }
+    }
+
+    .advantages__icon {
+      //
+
+      &--handmade {
+        margin-top: 3px;
       }
     }
   }

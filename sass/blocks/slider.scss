@@ -3,6 +3,7 @@
 
   .slider__item {
     display: none;
+    max-width: 875px;
 
     &--choose {
       display: block;

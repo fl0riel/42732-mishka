@@ -234,6 +234,7 @@ audio:not([controls]) {
  */
 
 img {
+  max-width: 100%;
   border-style: none;
 }
 
@@ -243,6 +244,15 @@ img {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+/**
+ * SVG inherit styles.
+ */
+
+svg, svg * {
+  fill: inherit;
+  stroke: inherit;
 }
 
 /* Forms

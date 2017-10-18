@@ -1,15 +1,21 @@
 @import "../variables.scss";
 
 .site-list {
-  //
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  list-style: none;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    //
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
 
     .site-list__item {
       margin-right: 35px;
+      border-left: none;
     }
 
     .site-list__link {
@@ -20,14 +26,16 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    //
+    order: 1;
+    flex-basis: 40%;
 
     .site-list__item {
       margin-right: 0;
       padding: 32px 0 30px;
+      border-left: 1px solid $border-color;
 
       &:first-child {
-        padding-right: 32px;
+        padding-right: 35px;
         border-left: none;
       }
 

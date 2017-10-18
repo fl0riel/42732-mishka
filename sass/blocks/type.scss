@@ -81,7 +81,7 @@
     }
 
     .type__input-radio:checked + .checkbox-indicator {
-      box-shadow: inset 0 0 0 13px $white-color,
+      box-shadow: inset 0 0 0 13.5px $white-color,
         inset 52px 52px 0 0 $light-green-color;
     }
   }
@@ -90,5 +90,9 @@
 @media (min-width: $desktop-width) {
   .type {
     //
+
+    .type__list {
+      margin-bottom: 23px;
+    }
   }
 }

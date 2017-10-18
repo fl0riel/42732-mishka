@@ -21,12 +21,18 @@
 @media (min-width: $desktop-width) {
   .catalog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 130px;
 
     .catalog__item {
       flex-direction: column;
-      flex-basis: 30%;
+      width: 30%;
+      margin-right: 4.76%;
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
     }
   }
 }

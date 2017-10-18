@@ -1,7 +1,7 @@
 @import "../variables";
 
 .social {
-  padding: 25px 0;
+  padding: 25px 5px 25px 0;
   border-bottom: 1px solid $border-color;
 
   .social__list {
@@ -23,21 +23,19 @@
   }
 
   .social__link {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
 
-    &--instagram {
-      background: url("../img/icon-insta.svg") center center no-repeat;
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: $dark-green-color;
     }
 
-    &--facebook {
-      background: url("../img/icon-fb.svg") center center no-repeat;
-    }
-
-    &--twitter {
-      background: url("../img/icon-twitter.svg") center center no-repeat;
+    &:active .social__icon {
+      fill-opacity: $down-link-opacity;
     }
   }
 }
@@ -46,20 +44,20 @@
   .social {
     padding: 0;
     border-bottom: none;
-    margin-left: 90px;
+    margin-left: 80px;
 
     .social__list {
-      //
-    }
-
-    .social__item {
-      //
+      margin-top: 5px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
+  .social {
     //
+
+    .social__list {
+      margin-top: 0;
+    }
   }
 }
