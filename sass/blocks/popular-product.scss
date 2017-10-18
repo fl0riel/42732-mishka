@@ -92,6 +92,7 @@
     }
 
     .popular-product__title-wrapper {
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 
@@ -180,6 +181,10 @@
     .popular-product__text {
       margin-top: 15px;
       margin-bottom: 45px;
+    }
+
+    .popular-product__group {
+      margin-bottom: 150px;
     }
 
     .popular-product__photo-wrapper {

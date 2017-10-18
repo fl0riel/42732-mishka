@@ -54,6 +54,14 @@
   .color__input-checkbox:active + .checkbox-indicator {
     border-color: $down-black-link;
   }
+
+  .color__input-checkbox:disabled + .checkbox-indicator,
+  .color__input-checkbox:disabled:hover + .checkbox-indicator,
+  .color__input-checkbox:disabled:active + .checkbox-indicator {
+    border-color: $dark-color;
+    opacity: $down-link-opacity;
+    cursor: default;
+  }
 }
 
 @media (min-width: $tablet-width) {
