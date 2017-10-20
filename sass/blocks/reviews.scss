@@ -13,10 +13,6 @@
     margin: 0 0 30px 0;
   }
 
-  .reviews__text-break {
-    display: none;
-  }
-
   .reviews__author {
     display: flex;
     flex-direction: column;
@@ -142,10 +138,6 @@
 
     .reviews__text {
       padding-right: 80px;
-    }
-
-    .reviews__text-break {
-      display: block;
     }
 
     .reviews__author {

@@ -3,6 +3,10 @@
 .modal {
   display: none;
 
+  &--show {
+    display: block;
+  }
+
   .modal__overlay {
     position: fixed;
     top: 0;
@@ -14,14 +18,15 @@
   }
 
   .modal__cart {
-    position: absolute;
-    top: 170%;
+    position: fixed;
+    top: 50%;
     width: 100%;
     padding-top: 18px;
     padding-bottom: 46px;
     text-align: center;
     background-color: $white-color;
     box-shadow: 0 4px 10px 1px $border-color;
+    transform: translate(0, -50%);
     z-index: 2;
   }
 
@@ -77,6 +82,16 @@
     color: $white-color;
     background-color: $light-green-color;
     border-color: $light-green-color;
+
+    &:hover,
+    &:focus {
+      border-color: $dark-green-color;
+    }
+
+    &:active {
+      background-color: $dark-green-color;
+      border-color: $dark-green-color;
+    }
   }
 }
 
@@ -90,7 +105,7 @@
       max-width: 568px;
       padding-right: 107px;
       padding-left: 107px;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
     }
 
     .modal__title {

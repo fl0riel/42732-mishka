@@ -53,6 +53,14 @@
   .type__input-radio:checked:active + .checkbox-indicator {
     border-color: $down-black-link;
   }
+
+  .type__input-radio:disabled + .checkbox-indicator,
+  .type__input-radio:disabled:hover + .checkbox-indicator,
+  .type__input-radio:disabled:active + .checkbox-indicator {
+    border-color: $dark-color;
+    opacity: $down-link-opacity;
+    cursor: default;
+  }
 }
 
 @media (min-width: $tablet-width) {
