@@ -1,0 +1,13 @@
+@media (max-width: $tablet-width-only) {
+  .page-header--js {
+    padding: 39px 0 40px;
+
+    .main-nav {
+      position: absolute;
+    }
+
+    .main-nav__toggle {
+      display: block;
+    }
+  }
+}

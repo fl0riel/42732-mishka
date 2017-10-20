@@ -1,7 +1,7 @@
 @import "../variables";
 
 .main-nav {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   display: block;
@@ -19,15 +19,15 @@
     position: absolute;
     top: 21px;
     right: 24px;
-    display: block;
+    display: none;
     width: 35px;
     height: 35px;
-    background: url("../img/icon-menu-close.svg") center center no-repeat;
+    background: url("../img/icon-menu-open.svg") center center no-repeat;
     border: none;
     cursor: pointer;
 
-    &--open {
-      background: url("../img/icon-menu-open.svg") center center no-repeat;
+    &--close {
+      background: url("../img/icon-menu-close.svg") center center no-repeat;
     }
   }
 
@@ -80,6 +80,10 @@
 
     .main-nav__toggle {
       display: none;
+    }
+
+    .main-nav__block {
+      display: flex;
     }
 
     .main-nav__item {

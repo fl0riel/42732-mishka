@@ -137,6 +137,14 @@
       fill: $light-green-color;
       fill-opacity: 1;
     }
+
+    &:disabled,
+    &:disabled:hover + .order__icon {
+      fill: $dark-color;
+      border-color: $dark-color;
+      opacity: $down-link-opacity;
+      cursor: default;
+    }
   }
 
   .order__icon {
@@ -174,6 +182,7 @@
 
     .order__fieldset {
       display: flex;
+      flex-wrap: wrap;
       border-top: none;
     }
 

@@ -120,6 +120,7 @@
 
     .intro__list {
       display: flex;
+      flex-wrap: wrap;
     }
 
     .intro__item {
@@ -166,9 +167,9 @@
       bottom: 0;
       width: 100%;
       height: 24px;
-      margin-bottom: -15px;
-      background: url("../img/bg-zigzag-fill.svg") 0 0 repeat-x;
-      background-size: auto 24px;
+      margin-bottom: -14px;
+      background: url("../img/bg-zigzag-fill.svg") 73px 0 repeat-x;
+      background-size: auto 23px;
     }
   }
 }
@@ -212,7 +213,7 @@
 
     &::after {
       height: 34px;
-      background-size: auto 34px;
+      background-size: auto 37px;
     }
   }
 }
