@@ -33,19 +33,9 @@
       align-items: center;
     }
 
-    .page-footer__block {
-      //
-    }
-
     .page-footer__logo {
       display: flex;
       align-self: flex-start;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    //
   }
 }

@@ -1,8 +1,6 @@
 @import "../variables";
 
 .page-main {
-  //
-
   .page-main__section {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
@@ -17,7 +15,6 @@
     color: $black-color;
   }
 
-
   .page-main__title-link {
     color: $black-color;
   }
@@ -25,12 +22,6 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    //
-
-    .page-main__section {
-      //
-    }
-
     .page-main__title {
       font-size: 43px;
       line-height: 50px;
@@ -40,12 +31,6 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    //
-
-    .page-main__section {
-      //
-    }
-
     .page-main__title {
       font-size: 53px;
       line-height: 57px;
