@@ -4,8 +4,6 @@
   display: none;
 
   .goods__link {
-    //
-
     &:hover,
     &:focus {
       color: $hover-black-link;
@@ -15,10 +13,6 @@
       color: $down-black-link;
     }
   }
-}
-
-@media (min-width: $tablet-width) {
-  //
 }
 
 @media (min-width: $desktop-width) {

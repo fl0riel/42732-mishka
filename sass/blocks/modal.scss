@@ -21,16 +21,18 @@
     position: fixed;
     top: 50%;
     width: 100%;
-    padding-top: 18px;
+    padding-top: 10px;
     padding-bottom: 46px;
     text-align: center;
     background-color: $white-color;
+    border: 1px solid $border-color;
     box-shadow: 0 4px 10px 1px $border-color;
     transform: translate(0, -50%);
     z-index: 2;
   }
 
   .modal__title {
+    margin-bottom: 13px;
     padding: 0 50px;
     font-weight: 700;
     font-size: 25px;
@@ -40,21 +42,17 @@
     text-transform: uppercase;
   }
 
-  .modal__form {
-    //
-  }
-
   .modal__form-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 23px 0 30px;
   }
 
   .modal__label {
     display: inline-block;
     vertical-align: middle;
     width: 80px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     font-weight: 700;
     font-size: 17px;
     line-height: 1;
@@ -95,11 +93,8 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .modal {
-    //
-
     .modal__cart {
       left: 50%;
       max-width: 568px;
@@ -109,19 +104,23 @@
     }
 
     .modal__title {
+      margin: 24px -1px 15px;
       padding: 0;
       font-size: 30px;
       line-height: 57px;
     }
 
-    .modal__label {
-      width: 110px;
+    .modal__notice {
+      font-size: 17px;
+      line-height: 30px;
     }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .modal {
-    //
+    .modal__form-wrapper {
+      margin: 20px 0 32px;
+    }
+
+    .modal__label {
+      padding: 15px 58px 15px 50px;
+    }
   }
 }

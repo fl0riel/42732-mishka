@@ -14,7 +14,6 @@ var concat = require("gulp-concat");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
 var removefill = require("remove-svg-properties").stream;
 var rename = require("gulp-rename");
 var run = require("run-sequence");
@@ -64,7 +63,7 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("html", function() {
-  return gulp.src("*.html")
+  return gulp.src(["*.html", "!_*.html"])
       .pipe(posthtml([
         includehtml()
       ]))
@@ -112,5 +111,5 @@ gulp.task("serve", function() {
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html"]);
-  gulp.watch("js/*.js",["js"]);
+  gulp.watch("js/*.js",["scripts"]);
 });

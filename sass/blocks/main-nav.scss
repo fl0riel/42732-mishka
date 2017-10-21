@@ -32,8 +32,6 @@
   }
 
   .main-nav__block {
-    //
-
     &--close {
       display: none;
     }
@@ -112,8 +110,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    //
-
     .main-nav__inner-wrapper {
       display: flex;
       justify-content: flex-end;
