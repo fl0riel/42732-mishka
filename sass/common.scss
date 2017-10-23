@@ -52,6 +52,7 @@ input[type="radio"].visually-hidden {
   color: $dark-color;
   text-align: center;
   text-transform: uppercase;
+  word-break: break-all;
   background-color: transparent;
   border: 2px solid $dark-color;
   border-radius: 0;
