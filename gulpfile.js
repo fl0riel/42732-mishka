@@ -27,7 +27,6 @@ gulp.task("style", function() {
       .pipe(postcss([
         autoprefixer()
       ]))
-      .pipe(gulp.dest("build/css"))
       .pipe(minify())
       .pipe(rename("style.min.css"))
       .pipe(gulp.dest("build/css"))
@@ -74,9 +73,7 @@ gulp.task("html", function() {
 
 gulp.task("scripts", function() {
   return gulp.src("js/*.js")
-      .pipe(concat("script.js"))
-      .pipe(gulp.dest("build/js"))
-      .pipe(rename("script.min.js"))
+      .pipe(concat("script.min.js"))
       .pipe(uglify())
       .pipe(gulp.dest("build/js"));
 });
@@ -89,7 +86,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/*.*",
-    "js/*.js"
+    "js/picturefill.min.js"
   ], {
     base: "."
   })

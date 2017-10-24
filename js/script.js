@@ -7,12 +7,16 @@ var pageHeader = document.querySelector(".page-header");
 
 pageHeader.classList.add("page-header--js");
 
+(function () { // IE NodeList Polyfill //
+  if ( typeof NodeList.prototype.forEach === "function" ) return false;
+  NodeList.prototype.forEach = Array.prototype.forEach;
+})();
+
 mainNavs.forEach(function(mainNav){
   mainNav.classList.add("main-nav__block--close");
 });
 
 burgerBtn.addEventListener("click", function(evt) {
-  evt.preventDefault();
   mainNavs.forEach(function(mainNav){
     mainNav.classList.toggle("main-nav__block--close");
   });
