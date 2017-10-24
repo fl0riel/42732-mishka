@@ -17,6 +17,7 @@ mainNavs.forEach(function(mainNav){
 });
 
 burgerBtn.addEventListener("click", function(evt) {
+  evt.preventDefault();
   mainNavs.forEach(function(mainNav){
     mainNav.classList.toggle("main-nav__block--close");
   });
